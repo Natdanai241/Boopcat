@@ -1885,7 +1885,7 @@ document.addEventListener('click',guard(function(ev){
     case 'online': { var n2=id('inpName2'), n1=id('inpName');
       if(n2&&!n2.value) n2.value=(n1&&n1.value)||getName()||'';
       show('scOnline'); break; }
-    case 'rules': { var r=id('ovRules'); if(r) r.classList.remove('hidden'); break; }
+    case 'rules': { var r=id('ovRules'); if(r) r.classList.remove('hidden'); var om3=id('ovMenu'); if(om3) om3.classList.add('hidden'); break; }
     case 'closeRules': { var r2=id('ovRules'); if(r2) r2.classList.add('hidden'); break; }
     case 'onBack': killPeer(); show('scMenu'); break;
     case 'create': {
